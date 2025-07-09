@@ -29,7 +29,7 @@ RecycleNow is a **fully responsive**, animated, and modern front-end website des
 
 | Home Section | Report Waste Form |
 |--------------|--------------------|
-| ![Home](1.png) | ![Form](2.png) |
+| ![Home](static/images/1.png) | ![Form](static/images/2.png) |
 
 ---
 
@@ -54,7 +54,7 @@ your-project/
 │   │   └── style.css        # Stylesheet
 │   ├── js/
 │   │   └── script.js        # JavaScript logic
-│   └── images/              # All UI Images
+│   └── images/              # All UI Images + Screenshots
 │       ├── hero-bg.jpg
 │       ├── mechanical.jpg
 │       ├── chemical.jpg
@@ -63,9 +63,9 @@ your-project/
 │       ├── upcycling.jpg
 │       ├── upcycle1.jpg
 │       ├── upcycle2.jpg
-│       └── upcycle3.jpg
-├── 1.png                    # Screenshot - Hero
-└── 2.png                    # Screenshot - Waste Report
+│       ├── upcycle3.jpg
+│       ├── 1.png            # Screenshot - Hero Section
+│       └── 2.png            # Screenshot - Waste Report Form
 ```
 
 ---
