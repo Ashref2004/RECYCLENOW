@@ -6,30 +6,24 @@
     <title>Recycling Initiative</title>
     <meta name="description" content="Join us in protecting our environment through recycling and waste reporting.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
-    <div class="scroll-progress"></div>
+<body class="light-mode">
+    <div class="theme-switcher">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <span class="toggle-ball"></span>
+    </div>
     
+    <div class="scroll-progress"></div>
     <div class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </div>
     
-    <div class="particles" id="particles"></div>
-    
-    <section class="video-hero" id="home">
-        <div class="video-background">
-             <iframe 
-  width="2000" 
-  height="1000" 
-  src="https://youtu.be/MzqimagVY9U?si=AiLppT3N84sGbI1S" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
-
-            <div class="video-overlay"></div>
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <img src="static/images/hero-bg.jpg" alt="Recycling background" loading="eager">
         </div>
         <div class="hero-content">
             <h1>RECYCLE<span>NOW</span></h1>
@@ -54,11 +48,11 @@
     
     <section class="content-section" id="Mechanical-Recycling">
         <div class="section-background">
-            <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mechanical Recycling" loading="lazy">
+            <img src="static/images/mechanical.jpg" alt="Mechanical Recycling" loading="lazy">
         </div>
         <div class="section-content">
             <h2>Mechanical <span>Recycling</span></h2>
-            <p>Mechanical recycling recovers waste materials through physical processes like shredding, washing, and melting without chemical changes. This cost-effective method preserves material structure and is ideal for plastics, metals, paper, and glass.</p>
+            <p>Mechanical recycling recovers waste materials through physical processes like shredding, washing, and melting without chemical changes.</p>
             <div class="stats">
                 <div class="stat-item">
                     <span class="stat-number">85%</span>
@@ -74,11 +68,11 @@
     
     <section class="content-section" id="Chemical-Recycling">
         <div class="section-background">
-            <img src="https://images.unsplash.com/photo-1581093196277-1c8d0a8a7a0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Chemical Recycling" loading="lazy">
+            <img src="static/images/chemical.jpg" alt="Chemical Recycling" loading="lazy">
         </div>
         <div class="section-content">
             <h2>Chemical <span>Recycling</span></h2>
-            <p>Chemical recycling breaks down polymers into original monomers through processes like pyrolysis and depolymerization. This advanced method handles complex plastics that mechanical recycling can't process, creating virgin-quality materials.</p>
+            <p>Chemical recycling breaks down polymers into original monomers through processes like pyrolysis and depolymerization.</p>
             <ul class="feature-list">
                 <li><i class="fas fa-check"></i> Processes contaminated plastics</li>
                 <li><i class="fas fa-check"></i> Creates high-quality outputs</li>
@@ -89,11 +83,11 @@
     
     <section class="content-section" id="Biological-Recycling">
         <div class="section-background">
-            <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Biological Recycling" loading="lazy">
+            <img src="static/images/biological.jpg" alt="Biological Recycling" loading="lazy">
         </div>
         <div class="section-content">
             <h2>Biological <span>Recycling</span></h2>
-            <p>Biological recycling uses natural processes like composting and anaerobic digestion to break down organic waste. This method transforms food scraps and agricultural waste into nutrient-rich soil amendments and renewable biogas.</p>
+            <p>Biological recycling uses natural processes like composting and anaerobic digestion to break down organic waste.</p>
             <div class="process-steps">
                 <div class="step">
                     <div class="step-icon"><i class="fas fa-leaf"></i></div>
@@ -116,11 +110,11 @@
     
     <section class="content-section" id="Reuse">
         <div class="section-background">
-            <img src="https://images.unsplash.com/photo-1605001011156-cbf0b0f67a51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Reuse" loading="lazy">
+            <img src="static/images/reuse.jpg" alt="Reuse" loading="lazy">
         </div>
         <div class="section-content">
             <h2>Reuse</h2>
-            <p>Reuse extends product lifecycles by using items multiple times without significant processing. This simple but effective approach reduces resource consumption and waste generation while promoting circular economy principles.</p>
+            <p>Reuse extends product lifecycles by using items multiple times without significant processing.</p>
             <div class="examples-grid">
                 <div class="example-item">
                     <i class="fas fa-wine-bottle"></i>
@@ -144,22 +138,22 @@
     
     <section class="content-section" id="Upcycling">
         <div class="section-background">
-            <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Upcycling" loading="lazy">
+            <img src="static/images/upcycling.jpg" alt="Upcycling" loading="lazy">
         </div>
         <div class="section-content">
             <h2>Upcycling</h2>
-            <p>Upcycling creatively transforms waste materials into products of higher quality or value. This innovative approach combines environmental benefits with artistic expression, turning discarded items into unique, functional objects.</p>
+            <p>Upcycling creatively transforms waste materials into products of higher quality or value.</p>
             <div class="upcycling-showcase">
                 <div class="showcase-item">
-                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Upcycled Furniture">
+                    <img src="static/images/upcycle1.jpg" alt="Upcycled Furniture" loading="lazy">
                     <h3>Pallet Furniture</h3>
                 </div>
                 <div class="showcase-item">
-                    <img src="https://images.unsplash.com/photo-1575505586569-646b2ca898fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1586&q=80" alt="Upcycled Art">
+                    <img src="static/images/upcycle2.jpg" alt="Upcycled Art" loading="lazy">
                     <h3>Bottle Art</h3>
                 </div>
                 <div class="showcase-item">
-                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Upcycled Fashion">
+                    <img src="static/images/upcycle3.jpg" alt="Upcycled Fashion" loading="lazy">
                     <h3>Recycled Fashion</h3>
                 </div>
             </div>
@@ -167,9 +161,10 @@
     </section>
     
     <section class="report-section" id="report-waste">
+        <div class="report-bg"></div>
         <div class="report-container">
             <h2><span>Report</span> Waste in Your Area</h2>
-            <p class="section-intro">Help us keep our environment clean by reporting waste you find in your community. Your reports help authorities identify problem areas and take action.</p>
+            <p class="section-intro">Help us keep our environment clean by reporting waste you find in your community.</p>
             
             <form id="waste-report-form">
                 <div class="form-row">
@@ -248,28 +243,15 @@
     </section>
     
     <footer class="main-footer">
-        <div class="footer-video-container">
-             <iframe 
-  width="2000" 
-  height="500" 
-  src="https://www.youtube.com/embed/wfSP0z3DB5Y" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
-            <div class="video-overlay"></div>
-        </div>
-        
         <div class="footer-content">
             <div class="footer-section about-section">
                 <h3>About Recycling Initiative</h3>
-                <p>We're a community-driven platform dedicated to creating cleaner environments through innovative recycling solutions and public participation.</p>
+                <p>We're a community-driven platform dedicated to creating cleaner environments.</p>
                 <div class="footer-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
             
@@ -277,12 +259,11 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#Mechanical-Recycling">Mechanical Recycling</a></li>
-                    <li><a href="#Chemical-Recycling">Chemical Recycling</a></li>
-                    <li><a href="#Biological-Recycling">Biological Recycling</a></li>
+                    <li><a href="#Mechanical-Recycling">Mechanical</a></li>
+                    <li><a href="#Chemical-Recycling">Chemical</a></li>
+                    <li><a href="#Biological-Recycling">Biological</a></li>
                     <li><a href="#Reuse">Reuse</a></li>
                     <li><a href="#Upcycling">Upcycling</a></li>
-                    <li><a href="#report-waste">Report Waste</a></li>
                 </ul>
             </div>
             
@@ -306,7 +287,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 Recycling Initiative. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>&copy; 2025 Recycling Initiative. All Rights Reserved.</p>
         </div>
     </footer>
     
